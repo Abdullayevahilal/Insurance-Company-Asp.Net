@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Insurance_Company</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\CaseStudies\" />
+    <Folder Include="Views\FAQ\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\Services\" />
+  </ItemGroup>
+
+
+
+</Project>
