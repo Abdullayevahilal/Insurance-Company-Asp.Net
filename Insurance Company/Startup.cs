@@ -27,6 +27,7 @@ namespace Insurance_Company
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
             services.AddDbContext<JotexDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default"),
                x=> x.MigrationsAssembly("Repository")
                 ));
