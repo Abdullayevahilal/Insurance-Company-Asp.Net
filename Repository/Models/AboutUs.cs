@@ -19,7 +19,9 @@ namespace Repository.Models
         [Required]
         [MaxLength(100)]
         public string İmage { get; set; }
-        public IEnumerable<AboutSpec> AboutSpecs { get; set; }
+        public ICollection<AboutSpec> AboutSpecs { get; set; }
+        public ICollection<Likeable> Likeables { get; set; }
+
 
     }
 }

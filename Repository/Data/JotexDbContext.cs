@@ -11,7 +11,6 @@ namespace Repository.Data
         public JotexDbContext(DbContextOptions<JotexDbContext> options) : base(options) { }
         public DbSet<Testimonial> Testimonials{ get; set; }
         public DbSet<Agent> Agents { get; set; }
-        public DbSet<BaseEntity> BaseEntities { get; set; }
        public DbSet<Brand> Brands { get; set; }
        public DbSet<HomeSlider> HomeSliders { get; set; }
       public DbSet<Label> Labels  { get; set; }

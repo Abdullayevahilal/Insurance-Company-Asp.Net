@@ -8,9 +8,13 @@ namespace Repository.Models
     public class AboutSpec : BaseEntity
 
     {
+        [Required]
+        [MaxLength(100)]
         public string Logo { get; set; }
-        [MaxLength(50)]
+       [Required]
+        [MaxLength(100)]
         public string Key { get; set; }
+        [Required]
         [MaxLength(500)]
         public string Value { get; set; }
         public int AboutUsId { get; set; }

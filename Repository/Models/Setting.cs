@@ -11,6 +11,9 @@ namespace Repository.Models
         [MaxLength(100)]
         public string Logo { get; set; }
         [Required]
+        [MaxLength(100)]
+        public string CoverPhoto { get; set; }
+        [Required]
         [MaxLength(50)]
         public string HaveAnyQuery { get; set; }
         [Required]

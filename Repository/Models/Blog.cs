@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Repository.Models
@@ -9,13 +10,13 @@ namespace Repository.Models
     {
         [Required]
         [MaxLength(100)]
-        public string BlogTitle { get; set; }
+        public string Title { get; set; }
         [Required]
         [MaxLength(500)]
-        public string BlogText { get; set; }
+        public string Text { get; set; }
         [Required]
         [MaxLength(100)]
-        public string BlogImage { get; set; }
+        public string Image { get; set; }
         [Required]
         [MaxLength(100)]
         public string Position { get; set; }

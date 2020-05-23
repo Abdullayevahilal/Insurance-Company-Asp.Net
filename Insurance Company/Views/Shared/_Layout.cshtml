@@ -27,17 +27,17 @@
 
 <body>
 
-     @*start page-wrapper 
+    <!--start page-wrapper-->
     <div class="page-wrapper">
 
-         start preloader 
-        <div class="preloader">
+        <!--start preloader -->
+        @*<div class="preloader">
             <div class="spinner">
                 <div class="double-bounce1"></div>
                 <div class="double-bounce2"></div>
             </div>
-        </div>
-         end preloader*@ 
+        </div>*@
+        <!--end preloader  -->
         <!-- Start header -->
         <header id="header" class="site-header header-style-1">
             <div class="topbar">
@@ -82,7 +82,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="~/images/logo.png"></a>
+                        <a class="navbar-brand" href="index.html"><img src="~/images/logo.png" alt=""></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-left navigation-holder">
                         <div class="left-separator"></div>
@@ -91,86 +91,48 @@
                             <li class="menu-item-has-children current-menu-parent">
                                 <a href="#">Home</a>
                                 <ul class="sub-menu">
-                                    <li class="current-menu-item"><a href="index.html">Home style 1</a></li>
-                                    <li><a href="index-2.html">Home style 2</a></li>
-                                    <li><a href="index-3.html">Home style 3</a></li>
-                                    <li><a href="index-4.html">Home style 4</a></li>
+                                    <li><a asp-controller="home" asp-action="index">Home style 1</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Pages</a>
                                 <ul class="sub-menu">
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
-                                    <li><a href="awards.html">Awards</a></li>
-                                    <li><a href="pricing-plan.html">Pricing plan</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                    <li><a href="testimonials-s2.html">Testimonials style 2</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="404.html">404</a></li>
+                                    <li><a asp-controller="pages" asp-action="aboutus">About us</a></li>
+                                    <li><a asp-controller="pages" asp-action="faq">FAQ</a></li>
+                                    <li><a asp-controller="pages" asp-action="error404">404</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Services</a>
                                 <ul class="sub-menu">
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="services-s2.html">Services style 2</a></li>
-                                    <li><a href="service-single.html">Life insurance</a></li>
-                                    <li><a href="car-insurance.html">Car insurance</a></li>
-                                    <li><a href="home-insurance.html">Home insurance</a></li>
-                                    <li><a href="health-insurance.html">Helth insurance</a></li>
-                                    <li><a href="investment-plan.html">Investment plan</a></li>
-                                    <li><a href="life-insurance.html">Life insurance</a></li>
+                                    <li><a asp-controller="pages" asp-action="servicesingle">Life insurance</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Case studies</a>
                                 <ul class="sub-menu">
-                                    <li><a href="case-studies.html">Case studies</a></li>
-                                    <li><a href="case-single.html">Case studies single</a></li>
+                                    <li><a asp-controller="case" asp-action="casestudies">Case studies</a></li>
+                                    <li><a asp-controller="case" asp-action="casesingle">Case studies single</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Blog</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item-has-children">
-                                        <a href="#Level3">Blog listing</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Right sidebar</a></li>
-                                            <li><a href="blog-left-sidebar.html">Left sidebar</a></li>
-                                            <li><a href="blog-fullwidth.html">Full width</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
                                         <a href="#Level3">Blog grid</a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog-grid-2-columns.html">2 columns</a></li>
-                                            <li><a href="blog-grid-2-columns-sidebar.html">2 columns sidebar</a></li>
-                                            <li><a href="blog-grid-3-columns.html">3 columns</a></li>
-                                            <li><a href="blog-grid-4-columns.html">4 columns</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#Level3">Blog masonry</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-masonry-2-columns.html">2 columns</a></li>
-                                            <li><a href="blog-masonry-2-columns-sidebar.html">2 columns sidebar</a></li>
-                                            <li><a href="blog-masonry-3-columns.html">3 columns</a></li>
-                                            <li><a href="blog-masonry-4-columns.html">4 columns</a></li>
+                                            <li><a asp-controller="blog" asp-action="bloggrid">4 columns</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="#Level3">Blog single</a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog-single.html">Right sidebar</a></li>
-                                            <li><a href="blog-single-left-sidebar.html">Left sidebar</a></li>
-                                            <li><a href="blog-single-full-width.html">Full width</a></li>
+                                            <li><a asp-controller="blog" asp-action="blogsingle">Right sidebar</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a asp-controller="pages" asp-action="contact">Contact</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
 
@@ -237,7 +199,7 @@
                                 <div class="widget-title">
                                     <h3>
                                         <span class="hidden">About us</span>
-                                        <img src="~/images/footer-logo.png">
+                                        <img src="~/images/footer-logo.png" alt="">
                                     </h3>
                                 </div>
                                 <p>Showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy</p>
@@ -314,26 +276,27 @@
                     </div>
                 </div>
             </div>
+
         </footer>
+    </div>
         <!-- end site-footer -->
-
-
-
-    
-    <!-- end of page-wrapper -->
-    <!-- All JavaScript files
+        <!-- end of page-wrapper -->
+        <!-- All JavaScript files
     ================================================== -->
 
 
-    <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/jquery.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
 
-    <!-- Plugins for this template -->
-    <script src="~/js/jquery-plugin-collection.js"></script>
+        <!-- Plugins for this template -->
+        <script src="~/js/jquery-plugin-collection.js"></script>
 
-    <!-- Custom script for this template -->
-    <script src="~/js/script.js"></script>
-    @RenderSection("Scripts", required: false)
+        <!-- Custom script for this template -->
+        <script src="~/js/script.js"></script>
+        <script src="~/js/main.js"></script>
+        <script src="~/lib/jquery-toast-plugin/jquery.toast.min.js"></script>
+
+        @RenderSection("Scripts", required: false)
 
 </body>
 </html>
