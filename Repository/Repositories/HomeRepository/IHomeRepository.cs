@@ -5,18 +5,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Repository.Repositories.ContentRepositories
+namespace Repository.Repositories.HomeRepository
 {
-
-    class ContentRepository : IContentRepository
+    public interface IHomeRepository
+    {
+        IEnumerable<HomeSlider> GetHomeSliders();
+        IEnumerable<AboutUs> GetAboutUs();
+        IEnumerable<Brand> GetBrands();
+        IEnumerable<Agent> GetAgents();
+        IEnumerable<Likeable> Likeables();
+        IEnumerable<Testimonial> GetTestimonials();
+        IEnumerable<Blog> Blogs();
+        IEnumerable<Setting> GetSettings();
+        IEnumerable<Product> GetProducts();
+    }
+    public class HomeRepository : IHomeRepository
     {
         private readonly JotexDbContext _context;
-        public ContentRepository(JotexDbContext context)
+        public HomeRepository(JotexDbContext context)
         {
             _context = context;
 
         }
-
         public IEnumerable<Blog> Blogs()
         {
             return _context.Blogs.Where(b => b.Status).ToList();
@@ -44,12 +54,12 @@ namespace Repository.Repositories.ContentRepositories
 
         public IEnumerable<Product> GetProducts()
         {
-            throw new NotImplementedException();
+            return _context.Products.Where(p => p.Status).ToList();
         }
 
         public IEnumerable<Setting> GetSettings()
         {
-            throw new NotImplementedException();
+            return _context.Settings.Where(s => s.Status).ToList();
         }
 
         public IEnumerable<Testimonial> GetTestimonials()
@@ -61,8 +71,5 @@ namespace Repository.Repositories.ContentRepositories
         {
             return _context.Likeables.Where(l => l.Status).ToList();
         }
-
     }
 }
-  
-    

@@ -1,8 +1,8 @@
-﻿@{
+﻿@model HomeViewModel
+@{
     ViewData["Title"] = "Index";
 }
 
-<!-- start of hero -->
 <section class="hero-slider hero-style-1">
     <div class="bottom-links">
         <div>
@@ -22,60 +22,9 @@
     </div>
 
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="slide-inner slide-bg-image" data-background="~/images/slider/slide-1.jpg">
-                    <div class="container">
-                        <div data-swiper-parallax="300" class="slide-title">
-                            <h2>Solution of your insurance</h2>
-                        </div>
-                        <div data-swiper-parallax="400" class="slide-text">
-                            <p>We are ready to serve you our best service, you have to just contact with us</p>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div data-swiper-parallax="500" class="slide-btns">
-                            <a href="#" class="theme-btn">More About Us</a>
-                        </div>
-                    </div>
-                </div> <!-- end slide-inner -->
-            </div> <!-- end swiper-slide -->
 
-            <div class="swiper-slide">
-                <div class="slide-inner slide-bg-image" data-background="src="~/images/slider/slide-2.jpg">
-                    <div class="container">
-                        <div data-swiper-parallax="300" class="slide-title">
-                            <h2>#1 Insurance company</h2>
-                        </div>
-                        <div data-swiper-parallax="400" class="slide-text">
-                            <p>We are ready to serve you our best service, you have to just contact with us</p>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div data-swiper-parallax="500" class="slide-btns">
-                            <a href="#" class="theme-btn">More About Us</a>
-                        </div>
-                    </div>
-                </div> <!-- end slide-inner -->
-            </div> <!-- end swiper-slide -->
-
-            <div class="swiper-slide">
-                <div class="slide-inner slide-bg-image" data-background="src="~/images/slider/slide-3.jpg">
-                    <div class="container">
-                        <div data-swiper-parallax="300" class="slide-title">
-                            <h2>Solution of your insurance</h2>
-                        </div>
-                        <div data-swiper-parallax="400" class="slide-text">
-                            <p>We are ready to serve you our best service, you have to just contact with us</p>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div data-swiper-parallax="500" class="slide-btns">
-                            <a href="#" class="theme-btn">More About Us</a>
-                        </div>
-                    </div>
-                </div> <!-- end slide-inner -->
-            </div><!-- end swiper-slide -->
-        </div>
-        <!-- end swiper-wrapper -->
-        <!-- swipper controls -->
+   <vc:slider></vc:slider>
+     
         <div class="swiper-pagination"></div>
         <div class="pagi">
             <div class="swiper-button-next"></div>
@@ -83,7 +32,7 @@
         </div>
     </div>
 </section>
-<!-- end of hero slider -->
+
 <!-- start about-section -->
 <section class="about-section section-padding">
     <div class="container">
@@ -139,7 +88,7 @@
                             <a href="#" class="theme-btn">More about us</a>
                         </div>
                         <div class="img-holder">
-                            <img src="src="~/images/about.jpg">
+                            <img src="~/images/about.jpg">
                         </div>
                     </div>
                 </div>
@@ -223,7 +172,7 @@
             <div class="col col-xs-12">
                 <div class="video-area">
                     <div class="img-holder">
-                        <img src="src="~/images/cta.jpg" alt="">
+                        <img src="~/images/cta.jpg" alt="">
                         <div class="video-btns">
                             <a href="https://www.youtube.com/embed/7e90gBu4pas?autoplay=1" class="video-btn" data-type="iframe" tabindex="0"><i class="fi flaticon-play"></i></a>
                         </div>
@@ -326,7 +275,7 @@
                             <p>Hi, I am agent venod <span>++685785475</span></p>
                         </div>
                         <div class="img-holder">
-                            <img src="src="~/images/agent-v.png" alt="">
+                            <img src="~/images/agent-v.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -390,7 +339,7 @@
                         </div>
                         <div class="blog-post-w-media post">
                             <div class="entry-media">
-                                <img src="src="~/images/blog/img-1.jpg" alt="">
+                                <img src="~/images/blog/img-1.jpg" alt="">
                             </div>
                             <p class="cat"><i class="fi flaticon-tag-1"></i> Insurance, company</p>
                             <h3><a href="#">How to shape your child’s dream into reality!</a></h3>

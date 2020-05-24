@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Repository.Data;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
+using Repository.Repositories.HomeRepository;
 
 namespace Insurance_Company
 {
@@ -28,10 +29,15 @@ namespace Insurance_Company
         {
           
             services.AddControllersWithViews();
+
             services.AddAutoMapper(typeof(Startup));
+
             services.AddDbContext<JotexDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default"),
                x=> x.MigrationsAssembly("Repository")
                 ));
+          
+            services.AddTransient<IHomeRepository, HomeRepository>();
+          
 
         }
 
@@ -62,5 +68,10 @@ namespace Insurance_Company
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+    }
+
+    internal interface IContentRepository
+    {
+        object GetHomeSliders();
     }
 }

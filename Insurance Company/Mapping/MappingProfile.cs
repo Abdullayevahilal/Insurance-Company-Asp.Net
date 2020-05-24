@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Insurance_Company.Models;
 using Repository.Models;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Insurance_Company.Mapping
     {
         public MappingProfile ()
         {
-            //CreateMap<HomeSlider>, HomeSliderViewModel();
+            CreateMap<HomeSlider, SliderViewModel>();
         }
        
     }
