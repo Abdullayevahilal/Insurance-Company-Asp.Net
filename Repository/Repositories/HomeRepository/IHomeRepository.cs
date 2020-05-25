@@ -44,7 +44,7 @@ namespace Repository.Repositories.HomeRepository
 
         public IEnumerable<Brand> GetBrands()
         {
-            return _context.Brands.Where(b => b.Status).ToList();
+            return _context.Brands.OrderByDescending(b=> b.AddedDate).ToList();
         }
 
         public IEnumerable<HomeSlider> GetHomeSliders()

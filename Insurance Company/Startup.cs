@@ -12,6 +12,7 @@ using Repository.Data;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using Repository.Repositories.HomeRepository;
+using Repository.Repositories.PageRepository;
 
 namespace Insurance_Company
 {
@@ -37,6 +38,7 @@ namespace Insurance_Company
                 ));
           
             services.AddTransient<IHomeRepository, HomeRepository>();
+            services.AddTransient<IPageRepository, PageRepository>();
           
 
         }

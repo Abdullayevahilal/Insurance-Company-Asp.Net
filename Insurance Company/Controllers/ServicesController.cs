@@ -6,14 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Insurance_Company.Controllers
 {
-    public class CaseStudiesController : Controller
+    public class ServicesController : Controller
     {
-       
-        public IActionResult CaseStudies()
-        {
-            return View();
-        }
-        public IActionResult CaseSingle()
+        public IActionResult Index()
         {
             return View();
         }

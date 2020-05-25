@@ -13,6 +13,7 @@ namespace Insurance_Company.Mapping
         public MappingProfile ()
         {
             CreateMap<HomeSlider, SliderViewModel>();
+            CreateMap<Brand, BrandViewModel>();
         }
        
     }

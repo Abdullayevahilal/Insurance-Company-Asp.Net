@@ -21,6 +21,8 @@ namespace Repository.Data
         public DbSet<AboutSpec> AboutSpecs { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Likeable> Likeables { get; set; }
+        public DbSet<FAQ> FAQs { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 
 }
