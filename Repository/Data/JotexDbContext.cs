@@ -23,6 +23,7 @@ namespace Repository.Data
         public DbSet<Likeable> Likeables { get; set; }
         public DbSet<FAQ> FAQs { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 
 }

@@ -26,7 +26,7 @@ namespace Insurance_Company.ViewComponents
         }
         public IViewComponentResult Invoke()
         {
-            var slide = _homeRepository.GetHomeSliders();
+            var slide = _homeRepository.GetFAQs();
 
             var model = _mapper.Map<IEnumerable<HomeSlider>, IEnumerable<SliderViewModel>>(slide);
 

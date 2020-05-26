@@ -9,7 +9,7 @@ namespace Repository.Repositories.HomeRepository
 {
     public interface IHomeRepository
     {
-        IEnumerable<HomeSlider> GetHomeSliders();
+        IEnumerable<HomeSlider> GetFAQs();
         IEnumerable<AboutUs> GetAboutUs();
         IEnumerable<Brand> GetBrands();
         IEnumerable<Agent> GetAgents();
@@ -47,7 +47,7 @@ namespace Repository.Repositories.HomeRepository
             return _context.Brands.OrderByDescending(b=> b.AddedDate).ToList();
         }
 
-        public IEnumerable<HomeSlider> GetHomeSliders()
+        public IEnumerable<HomeSlider> GetFAQs()
         {
             return _context.HomeSliders.Where(h => h.Status).OrderBy(h => h.OrderBy).ToList();
         }

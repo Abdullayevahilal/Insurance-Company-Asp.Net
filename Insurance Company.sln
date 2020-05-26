@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsuranceCompany", "Insuran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{0CD7BCE5-27C5-4DE0-9118-06716E3B1D1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin", "Admin\Admin.csproj", "{6EC82782-F8E6-4467-9CD8-18837CAF8B7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0CD7BCE5-27C5-4DE0-9118-06716E3B1D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CD7BCE5-27C5-4DE0-9118-06716E3B1D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CD7BCE5-27C5-4DE0-9118-06716E3B1D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC82782-F8E6-4467-9CD8-18837CAF8B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC82782-F8E6-4467-9CD8-18837CAF8B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC82782-F8E6-4467-9CD8-18837CAF8B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC82782-F8E6-4467-9CD8-18837CAF8B7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

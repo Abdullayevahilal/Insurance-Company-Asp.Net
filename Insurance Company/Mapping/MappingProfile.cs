@@ -14,6 +14,7 @@ namespace Insurance_Company.Mapping
         {
             CreateMap<HomeSlider, SliderViewModel>();
             CreateMap<Brand, BrandViewModel>();
+            CreateMap<FAQ, PageViewModel>();
         }
        
     }
