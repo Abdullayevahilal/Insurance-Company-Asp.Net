@@ -16,7 +16,7 @@ namespace Admin.Models.Account
 
         [Required]
         [DataType(DataType.Password)]
-        [MinLength(6,ErrorMessage = "Enter at least 6 digit")]
+        [MinLength(6,ErrorMessage = "Enter at minimum 6 digit")]
         public string Password { get; set; }
 
         
